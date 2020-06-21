@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<meta name="view port" content="width,initial-scale=1">
+<title>Page Title</title>
+</head>
+<body>
+
+<div class="header">
+  <h1>Please scroll down to see how this scroll indicator works</h1>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<div class="content">
+ <h2>Virtual learning: challenge technical institutions face</h2>
+  <p>Like most institutions across the country, AkiraChix had to close its doors on 16 March 2020 when the government declared the closure of all learning institutions across the country to mitigate the spread of COVID-19..</p>
+  <p> “I felt really bad when I heard we had to go home because I was used to the school’s programme, we had all fit in. I had made friends.” Stephanie Achieng, 20 years, recalls.
+
+   Achieng’ had just commenced her learning a few weeks earlier with the codeHive programme, at the beginning of February 2020, at AkiraChix. AkiraChix is a non-profit organisation offering market-relevant technology, entrepreneurship and life skills to young women between 18 and 24 years from challenged socio-economic backgrounds.</p>
+  <p>Like most institutions across the country, AkiraChix had to close its doors on 16 March 2020 when the government declared the closure of all learning institutions across the country to mitigate the spread of COVID-19. The one-year fully funded programme the institution runs offers full boarding facilities to 50 young women each year. This year they have girls from across 25 counties. But for most of them, learning ground to a halt, as soon as it began.</p>
+  <p>“We needed to come up with a solution to ensure all our girls continue to learn, most come from homes with either limited electricity or none at all. We opted to give WhatsApp a shot. We called it codeHive Lite.” Linda Kamau, Managing Director and Co-founder, AkiraChix, pointed out.</p>
+  <p>
+According to the 2019 Global Mobile Consumer Survey: Kenyan Cut, published by Deloitte, instant messaging applications have almost doubled in just three years, from 43 per cent in 2015 to 74 per cent in 2018.
+
+Based on this, WhatsApp would be an ideal learning option. But how do you teach software engineering or other technical subjects using a messaging application with 50 students?</p>
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+ </body></html>
